@@ -5,7 +5,7 @@ La función principal de este API es simplificar el acceso a los WebServices de 
 
 ### Pasos para hacer funcionar el API  
 1) Desde el root ```npm install```  
-2) Desde el root correr ```./tools/keygen.sh /C=AR/O=Nombre Desarrollador/CN=Nombre Desarrollador/serialNumber=CUIT 00000000000```  
+2) Desde el root correr ```./tools/keygen.sh /C=AR/O=imedina/CN=imedina/serialNumber=CUIT 20368679055```  
 3) Correr la app  
 3a) Para Homologación: ```HOMO=true node server.js```  
 3b) Para Producción: ```node server.js```    
