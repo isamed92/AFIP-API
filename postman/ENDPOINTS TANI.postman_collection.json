@@ -1,0 +1,573 @@
+{
+	"info": {
+		"_postman_id": "deed0681-464b-4194-baae-5dbc7e4e09e6",
+		"name": "ENDPOINTS TANI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/wsfev1/describe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/wsfev1/describe",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"wsfev1",
+						"describe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Endpoint FEDummy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "auth[key]",
+							"value": "abc123",
+							"type": "text"
+						},
+						{
+							"key": "Auth[Cuit]",
+							"value": "20368679055",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/wsfev1/FEDummy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"wsfev1",
+						"FEDummy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Endpoint FEParamGetTiposTributos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "auth[key]",
+							"value": "Auth",
+							"type": "text"
+						},
+						{
+							"key": "params[Auth][Cuit]",
+							"value": "00000000000",
+							"type": "text"
+						},
+						{
+							"key": "auth[token]",
+							"value": "Token",
+							"type": "text"
+						},
+						{
+							"key": "auth[sign]",
+							"value": "Sign",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/wsfev1/FEParamGetTiposTributos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"wsfev1",
+						"FEParamGetTiposTributos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Endpoint tipo comprobantes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Auth[Token]",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "Auth[Sign]",
+							"value": "{{sign}}",
+							"type": "text"
+						},
+						{
+							"key": "Auth[Cuit]",
+							"value": "{{cuit}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/wsfev1/FEParamGetTiposCbte",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"wsfev1",
+						"FEParamGetTiposCbte"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Endpoint tipo concepto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Auth[Token]",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "Auth[Sign]",
+							"value": "{{sign}}",
+							"type": "text"
+						},
+						{
+							"key": "Auth[Cuit]",
+							"value": "{{cuit}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/wsfev1/FEParamGetTiposConcepto",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"wsfev1",
+						"FEParamGetTiposConcepto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Endpoint tipo FEParamGetTiposMonedas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Auth[Token]",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "Auth[Sign]",
+							"value": "{{sign}}",
+							"type": "text"
+						},
+						{
+							"key": "Auth[Cuit]",
+							"value": "{{cuit}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/wsfev1/FEParamGetTiposMonedas",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"wsfev1",
+						"FEParamGetTiposMonedas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Endpoint tipo doc",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Auth[Token]",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "Auth[Sign]",
+							"value": "{{sign}}",
+							"type": "text"
+						},
+						{
+							"key": "Auth[Cuit]",
+							"value": "{{cuit}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/wsfev1/FEParamGetTiposDoc",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"wsfev1",
+						"FEParamGetTiposDoc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Endpoint FECompUltimoAutorizado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Auth[Token]",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "Auth[Sign]",
+							"value": "{{sign}}",
+							"type": "text"
+						},
+						{
+							"key": "Auth[Cuit]",
+							"value": "{{cuit}}",
+							"type": "text"
+						},
+						{
+							"key": "PtoVta",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "CbteTipo",
+							"value": " {{comprobante_id}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/wsfev1/FECompUltimoAutorizado",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"wsfev1",
+						"FECompUltimoAutorizado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Endpoint FECAESolicitar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Auth[Token]",
+							"value": "{{token}}",
+							"description": "\"s:string\"",
+							"type": "text"
+						},
+						{
+							"key": "Auth[Sign]",
+							"value": "{{sign}}",
+							"description": "\"s:string\"",
+							"type": "text"
+						},
+						{
+							"key": "Auth[Cuit]",
+							"value": "{{cuit}}",
+							"description": "\"s:long\"",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeCabReq][CantReg]",
+							"value": "1",
+							"description": "\"s:int\"",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeCabReq][PtoVta]",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeCabReq][CbteTipo]",
+							"value": "{{comprobante_id}}",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][Concepto]",
+							"value": "2",
+							"description": "1: producto 2: servicio 3: prod y servicio",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][DocTipo]",
+							"value": "96",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][DocNro]",
+							"value": "36867905",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][CbteDesde]",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][CbteHasta]",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][CbteFch]",
+							"value": "20211029",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][ImpTotal]",
+							"value": "8000",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][ImpTotConc]",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][ImpNeto]",
+							"value": "8000",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][ImpOpEx]",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][ImpTrib]",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][ImpIVA]",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][FchServDesde]",
+							"value": "20211001",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][FchServHasta]",
+							"value": "20211031",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][FchVtoPago]",
+							"value": "20211031",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][MonId]",
+							"value": "PES",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][MonCotiz]",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][CbtesAsoc][CbteAsoc][Tipo]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][CbtesAsoc][CbteAsoc][PtoVta]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][CbtesAsoc][CbteAsoc][Nro]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][CbtesAsoc][CbteAsoc][CbteFch]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][Tributos][Tributos][Id]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][Tributos][Tributos][Desc]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][Tributos][Tributos][BaseImp]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][Tributos][Tributos][Alic]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][Tributos][Tributos][Importe]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][Iva][AlicIva][Id]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][Iva][AlicIva][BaseImp]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][Iva][AlicIva][Importe]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][Opcionales][Opcional][Id]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][Opcionales][Opcional][Valor]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][Compradores][Comprador][DocTipo]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][Compradores][Comprador][DocNro]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][Compradores][Comprador][Porcentaje]",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][PeriodoAsoc][FchDesde]",
+							"value": "20211001",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][PeriodoAsoc][FchHasta]",
+							"value": "20211031",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/wsfev1/FECAESolicitar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"wsfev1",
+						"FECAESolicitar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
