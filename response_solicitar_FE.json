@@ -1,0 +1,26 @@
+{
+    "FeCabResp": {
+        "Cuit": "20368679055",
+        "PtoVta": 1,
+        "CbteTipo": 15,
+        "FchProceso": "20211101235705",
+        "CantReg": 1,
+        "Resultado": "A",
+        "Reproceso": "N"
+    },
+    "FeDetResp": {
+        "FECAEDetResponse": [
+            {
+                "Concepto": 2,
+                "DocTipo": 96,
+                "DocNro": "36867905",
+                "CbteDesde": "2",
+                "CbteHasta": "2",
+                "CbteFch": "20211029",
+                "Resultado": "A",
+                "CAE": "71445976548082",
+                "CAEFchVto": "20211108"
+            }
+        ]
+    }
+}

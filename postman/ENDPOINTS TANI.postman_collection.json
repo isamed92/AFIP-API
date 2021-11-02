@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost:3000/api/wsfev1/describe",
+			"name": "GET servicios",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -140,6 +140,45 @@
 						"api",
 						"wsfev1",
 						"FEParamGetTiposCbte"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Endpoint FECompUltimoAutorizado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Auth[Token]",
+							"value": "{{token}}",
+							"type": "text"
+						},
+						{
+							"key": "Auth[Sign]",
+							"value": "{{sign}}",
+							"type": "text"
+						},
+						{
+							"key": "Auth[Cuit]",
+							"value": "{{cuit}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/api/wsfev1/FECompUltimoAutorizado",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"wsfev1",
+						"FECompUltimoAutorizado"
 					]
 				}
 			},
@@ -371,12 +410,12 @@
 						},
 						{
 							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][CbteDesde]",
-							"value": "1",
+							"value": "2",
 							"type": "text"
 						},
 						{
 							"key": "FeCAEReq[FeDetReq][FECAEDetRequest][CbteHasta]",
-							"value": "1",
+							"value": "2",
 							"type": "text"
 						},
 						{
@@ -564,6 +603,26 @@
 						"api",
 						"wsfev1",
 						"FECAESolicitar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REGENERAR TOKEN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/wsfev1/refresh/token",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"wsfev1",
+						"refresh",
+						"token"
 					]
 				}
 			},
